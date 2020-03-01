@@ -9,14 +9,14 @@ using Xunit;
 
 namespace Runpath.TestApi.Tests
 {
-    public class PhotoServiceUnitTests : IDisposable
+    public class PhotoServiceTests : IDisposable
     {
 
         private IDataSerializationService dataSerializationService;
         private RestClient restClient;
         private IPhotoService  photoService;
 
-        public PhotoServiceUnitTests()
+        public PhotoServiceTests()
         {
            dataSerializationService = new JsonDataSerializationService();
             restClient = new RestClient(new System.Net.Http.HttpClient());
